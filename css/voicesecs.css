@@ -1,0 +1,740 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 100%;
+}
+
+/* Header & Nav-Links */
+#top {
+  max-width: 1200px;
+  min-height: 15vh;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  flex: 2;
+  padding-left: 60px;
+}
+
+.logo p {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+/* Navigation section */
+.login-link {
+  flex: 1;
+}
+
+.link {
+  display: flex;
+  flex: 1;
+}
+
+.link ul {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.link li {
+  list-style: none;
+  margin: 0;
+  padding: 0rem 1.1rem;
+}
+
+li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: coral;
+  display: block;
+  margin: auto;
+  transition: 1s;
+}
+
+li:hover::after {
+  width: 100%;
+}
+
+.link li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+/* Sign Up & Login Buttons */
+.login-link {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-1,
+.btn-2 {
+  text-decoration: none;
+  color: #fff;
+  font-size: 0.9rem;
+  margin: 0px 1rem;
+}
+
+.btn-1 {
+  border: 3px solid lightblue;
+  border-radius: 15px;
+  padding: 0.45rem;
+}
+
+.btn-1:hover {
+  background: coral;
+  border: none;
+  transform: 1s;
+  padding: 0.6rem;
+}
+
+.btn-2:hover {
+  border-radius: 15px;
+  padding: 0.6rem;
+  background: purple;
+  border: 3px solid lightblue;
+}
+
+/* Main Section 
+  And text Part */
+#main-section {
+  display: flex;
+  flex-direction: row;
+  max-width: 1200px;
+  margin: auto;
+  min-height: 100vh;
+  position: relative;
+}
+
+.content {
+  max-width: 600px;
+  min-height: 100vh;
+}
+
+.p-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.p-text p {
+  position: absolute;
+  left: 60px;
+  top: 100px;
+  text-transform: capitalize;
+  color: blue;
+}
+
+.p-text h1 {
+  position: absolute;
+  left: 60px;
+  top: 150px;
+  font-size: 2.3rem;
+}
+
+/* Link section to Podcast and Brands */
+.button-text {
+  display: flex;
+  position: absolute;
+  left: 48px;
+  top: 330px;
+}
+
+.button-text .podcast,
+.brand {
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 0.9rem;
+  color: #fff;
+  border-radius: 120px;
+  border: none;
+  margin: 0px 10px;
+  text-decoration: none;
+}
+
+.podcast {
+  background: linear-gradient(to left, rgba(210, 87, 39, 0.7), rgba(210, 23, 101, 0.8));
+}
+
+.podcast:hover {
+  background: rgba(85, 33, 220, 0.9);
+}
+
+.brand {
+  background: linear-gradient(to left, rgba(99, 101, 199, 0.5), rgba(85, 33, 220, 0.9));
+}
+
+.brand:hover {
+  background: purple;
+}
+
+/* Literal Sound Depiction */
+.animate {
+  position: relative;
+  left: 80px;
+  top: -85px;
+  z-index: -2;
+}
+
+.animate > div {
+  margin: 8px;
+  border-radius: 20px;
+  transform: skewY(-145deg);
+  animation: fire 2s infinite;
+}
+
+@keyframes fire {
+  0% {
+    transform: translate(0px);
+  }
+  50% {
+    transform: rotate(60deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.to,
+.so,
+.go {
+  width: 40px;
+  height: 6px;
+  background: lightpink;
+  animation: pickup 1s infinite;
+  position: relative;
+  top: 2px;
+}
+
+.if,
+.in {
+  width: 70px;
+  height: 6px;
+  background: lightblue;
+  position: relative;
+  left: -20px;
+}
+
+/* Div's segment */
+.divs-box {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 0;
+  top: 10%;
+}
+
+.fifth-div {
+  position: absolute;
+  right: 30px;
+  width: 290px;
+  height: 290px;
+  border-radius: 50%;
+  top: 30px;
+  z-index: -1;
+  border: 0;
+  background: coral;
+  background: linear-gradient(to right, rgba(255, 127, 80, 0.8), rgba(68, 53, 230, 0.9));
+}
+
+.fourth-div {
+  position: absolute;
+  right: 80px;
+  top: -80px;
+  width: 230px;
+  height: 230px;
+  border-radius: 50%;
+  z-index: 1;
+  border: 10px solid #fff;
+  background: url(/images/podcast-3696504_1280.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.sixth-div {
+  position: absolute;
+  right: 330px;
+  top: 60px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: coral;
+  z-index: 1;
+}
+
+.third-div {
+  position: absolute;
+  right: 90px;
+  top: 20px;
+  width: 290px;
+  height: 290px;
+  border-radius: 50%;
+  background: transparent;
+  border: 3px solid violet;
+  z-index: 1;
+  animation: trans 1.5s infinite;
+}
+
+@keyframes trans {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+
+.second-div {
+  position: absolute;
+  right: 250px;
+  top: 120px;
+  border-radius: 50%;
+  width: 170px;
+  height: 170px;
+  z-index: 2;
+  background: url(/images/man-5971509_640.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 7px solid #fff;
+}
+
+.first-div {
+  position: absolute;
+  right: 90px;
+  top: 215px;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  z-index: 2;
+  background: url(/images/cute-15719_1280.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 5px solid #fff;
+}
+
+/* Pseudo Element Design */
+#top::after {
+  content: "";
+  background: blue;
+  width: 50%;
+  min-height: 160vh;
+  position: absolute;
+  right: 0;
+  z-index: -1;
+  border: none;
+  margin-bottom: -10px;
+  border-top-left-radius: 400%;
+  border-bottom-left-radius: 800%;
+  border-bottom-right-radius: 400%;
+}
+
+/* Registration And Audio sections */
+.Registration {
+  max-width: 1200px;
+  min-height: auto;
+  margin: -140px auto;
+  display: flex;
+  opacity: 1;
+  z-index: -1;
+}
+
+/* Form section */
+.form-sub {
+  flex: 2;
+  width: 600px;
+  min-height: 62vh;
+  background: lightblue;
+  z-index: 2;
+  position: absolute;
+  top: 640px;
+}
+
+.subscription {
+  margin-top: -25px;
+  margin-bottom: 40px;
+  margin-left: 110px;
+}
+
+.subscription p {
+  color: blue;
+  font-size: 0, 9rem;
+  font-weight: 400;
+}
+
+.time:nth-of-type(1) {
+  margin-top: 40px;
+}
+
+label {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-left: 60px;
+}
+
+input[type="text"],
+input[type="email"] {
+  padding: 15px;
+  margin-top: 20px;
+  margin-left: 60px;
+  width: 62%;
+  border: none;
+  border-radius: 15px;
+}
+
+input[type="text"] {
+  margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="email"]:focus {
+  outline: none;
+}
+
+.tick {
+  margin-top: 15px;
+  margin-left: 5px;
+}
+
+input[type="checkbox"] {
+  zoom: 2;
+}
+
+input[type="checkbox"]:checked {
+  background: brown;
+}
+
+button[type="submit"] {
+  padding: 12px;
+  margin-top: 5px;
+  margin-left: 60px;
+  width: 62%;
+  font-size: 1rem;
+  font-weight: 600;
+  color: black;
+  border: none;
+  border-radius: 15px;
+  background: violet;
+  transition: 0.2s;
+  cursor: pointer;
+  box-shadow: 0px 4px 6px 0px, 0px 6px 8px 0px rgba(0, 0, 0, 0.3);
+}
+
+button[type="submit"]:hover {
+  background: purple;
+  transition: 0.3s;
+  box-shadow: 0px 6px 10px 0px, 0px 10px 20px 0px rgba(0, 0, 0, 0.12);
+}
+
+/* Audio section */
+.podcast-records {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 640px;
+  left: 900px;
+}
+
+audio {
+  margin: 10px 0px;
+  width: 320px;
+  height: 50px;
+}
+
+.respo {
+  display: none;
+  width: 30px;
+}
+
+/* Responsiveness for iPads */
+@media screen and (max-width: 768px) {
+  .respo {
+    display: block;
+    cursor: pointer;
+  }
+  .link {
+    display: block;
+  }
+  .link ul {
+    display: block;
+  }
+  .link li {
+    padding-top: 22px;
+    padding-left: 10px;
+  }
+  .post {
+    position: absolute;
+    background: var(--pro-color);
+    min-height: 70vh;
+    width: 280px;
+    padding-top: 40px;
+    padding-left: 20px;
+    top: 0;
+    right: -300px;
+    text-align: center;
+    z-index: 3;
+    transition: 0.5s;
+  }
+  #top::after {
+    border-top-left-radius: 500%;
+    border-bottom-left-radius: 900%;
+    border-bottom-right-radius: 500%;
+    min-height: 130vh;
+    margin-bottom: -70px;
+  }
+  .first-div {
+    right: 70px;
+    top: 200px;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+  }
+  .second-div {
+    right: 180px;
+    top: 90px;
+    width: 120px;
+    height: 120px;
+  }
+  .third-div {
+    right: 70px;
+    top: 40px;
+    width: 200px;
+    height: 200px;
+  }
+  .fourth-div {
+    right: 50px;
+    top: -80px;
+    width: 170px;
+    height: 170px;
+  }
+  .fifth-div {
+    right: 30px;
+    width: 230px;
+    height: 230px;
+    top: 50px;
+  }
+  .sixth-div {
+    right: 230px;
+    top: 60px;
+    width: 15px;
+    height: 15px;
+  }
+  .Registration {
+    display: flex;
+    flex-direction: column;
+    margin-top: -220px;
+    width: 100%;
+    min-height: auto;
+  }
+  .time:nth-of-type(1) {
+    margin-top: 15px;
+  }
+  .form-sub {
+    min-height: 53vh;
+    left: 60px;
+    top: 600px;
+  }
+  input[type="text"],
+  input[type="email"] {
+    width: 78%;
+  }
+  button[type="submit"] {
+    padding: 12px;
+    margin-left: 55px;
+    width: 78%;
+  }
+  .podcast-records {
+    flex: 1;
+    position: absolute;
+    top: 1000px;
+    left: 190px;
+    z-index: 2;
+  }
+  audio {
+    width: 320px;
+  }
+}
+
+/* Responsiveness for Tablets */
+@media screen and (max-width: 448px) {
+  input[type="text"],
+  input[type="email"],
+  button[type="submit"] {
+    width: 45%;
+  }
+  button[type="submit"] {
+    margin-left: 50px;
+  }
+  input[type="checkbox"] {
+    zoom: 1.5;
+  }
+  .form-sub {
+    top: 900px;
+  }
+  .subscription {
+    margin-top: -25px;
+    margin-left: 90px;
+  }
+  .subscription p {
+    font-size: 0.4rem;
+  }
+  .podcast-records {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 1300px;
+    left: 100px;
+  }
+  audio {
+    width: 280px;
+  }
+  .subscription p {
+    font-size: 0.9rem;
+  }
+  .divs-box {
+    right: 100px;
+    top: 500px;
+  }
+  .Registration {
+    margin: 120px 0px;
+  }
+  #top::after {
+    content: "";
+    display: none;
+  }
+  .link li {
+    padding: 0rem 0rem;
+  }
+  .post {
+    background: var(--primary-color);
+    min-height: 47vh;
+    width: 200px;
+    border-bottom-right-radius: 30%;
+  }
+  .login-link {
+    display: none;
+  }
+  .first-div {
+    width: 50px;
+    height: 50px;
+    right: 63px;
+    top: 180px;
+  }
+  .second-div {
+    width: 100px;
+    height: 100px;
+  }
+  .third-div {
+    width: 170px;
+    height: 170px;
+  }
+  .fourth-div {
+    width: 150px;
+    height: 150px;
+  }
+  .fifth-div {
+    width: 190px;
+    height: 190px;
+    top: 50px;
+  }
+  .sixth-div {
+    width: 15px;
+    height: 15px;
+  }
+  .link li {
+    padding-top: 30px;
+    padding-left: 10px;
+  }
+}
+
+/* Responsiveness for Mobile Devices */
+@media screen and (max-width: 320px) {
+  .divs-box {
+    right: 30px;
+    top: 550px;
+  }
+  .first-div {
+    width: 50px;
+    height: 50px;
+    right: 60px;
+    top: 165px;
+  }
+  .second-div {
+    width: 70px;
+    height: 70px;
+    right: 165px;
+  }
+  .third-div {
+    width: 150px;
+    height: 150px;
+  }
+  .fourth-div {
+    top: -50px;
+    width: 130px;
+    height: 130px;
+  }
+  .fifth-div {
+    width: 170px;
+    height: 170px;
+    top: 50px;
+  }
+  .sixth-div {
+    width: 15px;
+    height: 15px;
+    right: 193px;
+  }
+  .post {
+    width: 100px;
+  }
+  .link li {
+    padding-top: 30px;
+    padding-left: 10px;
+  }
+  .button-text {
+    top: 430px;
+  }
+  .p-text h1 {
+    top: 150px;
+  }
+  .podcast-records {
+    left: 50px;
+  }
+  audio {
+    width: 200px;
+  }
+  .form-sub {
+    left: 0px;
+  }
+  input[type="text"],
+  input[type="email"],
+  button[type="submit"] {
+    width: 35%;
+  }
+  input[type="checkbox"] {
+    zoom: 1.5;
+  }
+  .subscription {
+    margin-top: -20px;
+    margin-left: 95px;
+  }
+  .subscription p {
+    font-size: 0.7rem;
+  }
+}
+/*# sourceMappingURL=voicesecs.css.map */
