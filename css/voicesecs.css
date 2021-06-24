@@ -254,7 +254,7 @@ li:hover::after {
   border-radius: 50%;
   z-index: 1;
   border: 10px solid #fff;
-  background: url(/images/podcast-3696504_1280.jpg);
+  background: url(../images/podcast-3696504_1280.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -305,7 +305,7 @@ li:hover::after {
   width: 170px;
   height: 170px;
   z-index: 2;
-  background: url(/images/man-5971509_640.jpg);
+  background: url(../images/man-5971509_640.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -320,7 +320,7 @@ li:hover::after {
   width: 100px;
   height: 100px;
   z-index: 2;
-  background: url(/images/cute-15719_1280.jpg);
+  background: url(../images/cute-15719_1280.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
