@@ -431,15 +431,20 @@ audio {
   width: 320px;
   height: 50px;
 }
-.respo {
+.topp {
   display: none;
-  width: 30px;
+  border: none;
+  background: none;
+}
+.fa-times,
+.fa-bars {
+  font-size: 35px;
 }
 
 /* Responsiveness for iPads */
 
 @media screen and (max-width: 768px) {
-  .respo {
+  .topp {
     display: block;
     cursor: pointer;
   }
@@ -455,7 +460,7 @@ audio {
   }
   .post {
     position: absolute;
-    background: var(--pro-color);
+    background: $primary-color;
     min-height: 70vh;
     width: 280px;
     padding-top: 40px;
@@ -599,7 +604,6 @@ audio {
     padding: 0rem 0rem;
   }
   .post {
-    background: var(--primary-color);
     min-height: 47vh;
     width: 200px;
     border-bottom-right-radius: 30%;
